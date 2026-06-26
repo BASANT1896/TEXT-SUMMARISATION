@@ -8,4 +8,4 @@ jinja2
 python-docx
 PyPDF2
 pydantic
---only-binary :all: safetensors
+python-multipart

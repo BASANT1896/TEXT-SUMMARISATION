@@ -1,11 +1,11 @@
-fastapi==0.115.0
-uvicorn[standard]==0.30.0
-gunicorn==23.0.0
-transformers==4.41.2
-torch>=2.2.0
-sentencepiece==0.2.1
-jinja2==3.1.4
-python-docx==1.1.2
-PyPDF2==3.0.1
-pydantic==2.10.4
+fastapi
+uvicorn[standard]
+gunicorn
+transformers
+torch
+sentencepiece
+jinja2
+python-docx
+PyPDF2
+pydantic
 --only-binary :all: safetensors

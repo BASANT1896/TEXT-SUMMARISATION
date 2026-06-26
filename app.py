@@ -30,13 +30,17 @@ def get_model():
     global model, tokenizer
     if model is None:
         print("Loading model from Hugging Face Hub...")
-        # Point to your Hub repository ID
         model_id = "BASANT1896/saved_summary_model"
         
         tokenizer = AutoTokenizer.from_pretrained(model_id, use_fast=False)
-        model = AutoModelForSeq2SeqLM.from_pretrained(model_id)
         
-        model.to(device)
+        # OPTIMIZATION: Load the model directly to CPU and limit memory overhead
+        model = AutoModelForSeq2SeqLM.from_pretrained(
+            model_id,
+            low_cpu_mem_usage=True  # Reduces RAM spikes during loading
+        )
+        
+        model.to("cpu")
         model.eval()
     return model, tokenizer
 

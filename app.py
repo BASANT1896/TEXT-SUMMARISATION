@@ -27,10 +27,13 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 def get_model():
     global model, tokenizer
     if model is None:
-        print("Loading model for the first time...")
-        # Ensure path matches the folder created by your download_model.sh script
-        tokenizer = AutoTokenizer.from_pretrained("./saved_summary_model", use_fast=False)
-        model = AutoModelForSeq2SeqLM.from_pretrained("./saved_summary_model")
+        print("Loading model from Hugging Face Hub...")
+        # Point to your Hub repository ID
+        model_id = "BASANT1896/saved_summary_model"
+        
+        tokenizer = AutoTokenizer.from_pretrained(model_id, use_fast=False)
+        model = AutoModelForSeq2SeqLM.from_pretrained(model_id)
+        
         model.to(device)
         model.eval()
     return model, tokenizer

@@ -1,9 +1,10 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.2.1+cpu
+transformers
+sentencepiece
 fastapi
 uvicorn[standard]
 gunicorn
-transformers
-torch
-sentencepiece
 jinja2
 python-docx
 PyPDF2

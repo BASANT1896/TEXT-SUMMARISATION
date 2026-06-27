@@ -88,8 +88,8 @@ Ensure you have the following installed on your machine:
 
 ```bash
 # 1. Clone the Repository & Navigate In
-git clone [https://github.com/BASANT1896/TEXT-SUMMARISATION-.git](https://github.com/your-username/your-repo-name.git)
-cd your-repo-name
+git clone [https://github.com/BASANT1896/TEXT-SUMMARISATION-.git]
+cd TEXT-SUMMARISATION-
 
 # 2. Set Up a Virtual Environment
 python3 -m venv venv

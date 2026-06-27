@@ -76,12 +76,6 @@ You may check out the complete system architecture implementation details, train
 
 Follow these step-by-step instructions to clone the repository, configure your local environment, train the model, and launch the interactive web application.
 
-### 📋 Prerequisites
-Ensure you have the following installed on your machine:
-* Python 3.8 or higher
-* `pip` (Python package installer)
-* A CUDA-compatible GPU (Highly recommended for accelerating the training phase)
-
 ---
 
 ### 💻 Step-by-Step Environment Setup & Execution

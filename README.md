@@ -25,6 +25,17 @@ The hybrid summarization architecture is integrated into a user-friendly, respon
   <b>2. Model Output (After Summarization)</b><br>
   <img src="templates/Screenshot 2026-06-27 135735.png" alt="After Summarization Output" width="90%" style="border-radius: 8px;">
 </p>
+<br>
+
+<p align="center">
+  <a href="https://basant1896-text-summarisation.hf.space/" target="_blank">
+    <img src="https://img.shields.io/badge/%F0%9F%9A%80%20Try%20The%20Live%20Demo-Click%20Here-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="Live Demo" height="45">
+  </a>
+</p>
+
+<p align="center">
+  🔗 <b>Direct Link:</b> <a href="https://basant1896-text-summarisation.hf.space/" target="_blank">basant1896-text-summarisation.hf.space</a>
+</p>
 
 ---
 

@@ -12,6 +12,22 @@ The project features a full-stack, low-latency text summarization pipeline deplo
 
 ---
 
+## 🖥️ Web Interface & Demo
+
+The hybrid summarization architecture is integrated into a user-friendly, responsive web interface. Users can seamlessly paste unstructured text blocks or upload standard document formats directly to generate real-time evaluations.
+
+<p align="center">
+  <b>1. Input Interface (Before Summarization)</b><br>
+  <img src="Screenshot 2026-06-27 135702.png" alt="Before Summarization Interface" width="90%" style="border-radius: 8px; margin-bottom: 20px;">
+</p>
+
+<p align="center">
+  <b>2. Model Output (After Summarization)</b><br>
+  <img src="Screenshot 2026-06-27 135735.png" alt="After Summarization Output" width="90%" style="border-radius: 8px;">
+</p>
+
+---
+
 #### Quantitative Evaluation (ROUGE Metrics)
 [cite_start]Evaluated on a completely isolated 1,000-sample test set, the hybrid framework yields competitive, factually grounded scores across the industry standard evaluation suite[cite: 113, 123]:
 

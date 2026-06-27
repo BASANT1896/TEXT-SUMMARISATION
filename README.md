@@ -107,3 +107,23 @@ python train.py --epochs 3 --batch_size 2 --lr 3e-5 --grad_accum 4
 
 # 5. Launch the Local FastAPI Web Application
 uvicorn main:app --reload --host 127.0.0.1 --port 8000
+```
+## 📁 Dataset
+
+This project uses the **"Newspaper Text Summarization (CNN/DailyMail)"** dataset from Kaggle.
+
+[![Kaggle](https://img.shields.io/badge/Kaggle-Dataset-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)](https://www.kaggle.com/datasets/gowrishankarp/newspaper-text-summarization-cnn-dailymail)
+
+We have utilized this dataset to rigorously train and evaluate our fine-tuned FLAN-T5-base model. For our experimental partition setup, we extracted 8,000 samples for the training set, 300 samples for validation, and an isolated 1,000-sample pool for the final testing phase[cite: 1].
+
+### ⚙️ Setup Instructions:
+
+1. **Download the dataset** from Kaggle using the badge link above.
+2. **Extract the contents** into your localized project directory (e.g., `./data/cnn_dailymail/`).
+3. **Verify that the files** mapped (`train.csv`, `id`, `article`, `highlights`) sync with your pipeline ingestion paths inside your data loading script.
+
+### 🌟 Additional Applications:
+
+* 📰 **News Feed Ingestion & Aggregation:** Automatically distill lengthy press releases, global journalism feeds, and breaking news into real-time bulleted highlights for media dashboards.
+* 🎓 **Academic & Legal Document Analysis:** Filter and compress dense research publications, legal contracts, or whitepapers into precise abstractive summaries without losing crucial statistical trends or factual grounding.
+* 💼 **Enterprise Knowledge Management:** Integrate the low-latency FastAPI endpoint with internal company databases to instantly summarize massive repositories of unstructured text, emails, or operational reports.

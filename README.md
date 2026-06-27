@@ -14,7 +14,7 @@ The project features a full-stack, low-latency text summarization pipeline deplo
 
 ## 🖥️ Web Interface & Demo
 
-The hybrid summarization architecture is integrated into a user-friendly, responsive web interface. Users can seamlessly paste unstructured text blocks or upload standard document formats directly to generate real-time evaluations.
+The hybrid summarization architecture is integrated into a user-friendly, responsive web interface.
 
 <p align="center">
   <b>1. Input Interface (Before Summarization)</b><br>
@@ -40,7 +40,7 @@ The hybrid summarization architecture is integrated into a user-friendly, respon
 ---
 
 #### Quantitative Evaluation (ROUGE Metrics)
-[cite_start]Evaluated on a completely isolated 1,000-sample test set, the hybrid framework yields competitive, factually grounded scores across the industry standard evaluation suite[cite: 113, 123]:
+Evaluated on ROUGE metrics, following are the results obtained:
 
 | Metric | Testing Score (%) | Targeted Core Assessment Area |
 | :--- | :--- | :--- |
@@ -87,8 +87,6 @@ cd TEXT-SUMMARISATION
 
 # 2. Set Up a Virtual Environment
 python3 -m venv venv
-
-
 source venv/bin/activate
 
 # On Windows (Command Prompt):
@@ -102,9 +100,6 @@ pip install --upgrade pip
 pip install -r requirements.txt
 
 # 4. Run Your Own Training Pipeline
-# This runs the fine-tuning pipeline on the CNN/DailyMail dataset 
-# and saves the model weights to a localized './saved_model/' directory.
-
 python train.py --epochs 3 --batch_size 2 --lr 3e-5 --grad_accum 4
 
 # 5. Launch the Local FastAPI Web Application
@@ -116,7 +111,7 @@ This project uses the **"Newspaper Text Summarization (CNN/DailyMail)"** dataset
 
 [![Kaggle](https://img.shields.io/badge/Kaggle-Dataset-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)](https://www.kaggle.com/datasets/gowrishankarp/newspaper-text-summarization-cnn-dailymail)
 
-We have utilized this dataset to rigorously train and evaluate our fine-tuned FLAN-T5-base model. For our experimental partition setup, we extracted 8,000 samples for the training set, 300 samples for validation, and an isolated 1,000-sample pool for the final testing phase[cite: 1].
+We have utilized this dataset to rigorously train and evaluate our fine-tuned FLAN-T5-base model. For our experimental partition setup, we extracted 8,000 samples for the training set, 300 samples for validation, and an isolated 1,000-sample pool for the final testing phase.
 
 ### ⚙️ Setup Instructions:
 
